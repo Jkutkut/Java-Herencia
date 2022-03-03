@@ -2,13 +2,7 @@ package dam.prog.actividad_8_2.estudio_arquitectura;
 
 import java.util.Scanner;
 
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Banio;
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Casa;
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Cocina;
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Estancia;
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Habitacion;
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Hall;
-import dam.prog.actividad_8_2.estudio_arquitectura.model.Salon;
+import dam.prog.actividad_8_2.estudio_arquitectura.model.*;
 
 public class GestionaArq {
 	
@@ -139,7 +133,7 @@ public class GestionaArq {
 		int i = 0;
 		Object[] args = new Object[8];
 		System.out.println("Introduce los datos de la nueva estancia " + Estancia.ESTANCIAS[tipo]);
-		args[i++] = Estancia.ESTANCIAS[tipo] + contHabitaciones[tipo]++;
+		args[i++] = Estancia.ESTANCIAS[tipo] + "_" + contHabitaciones[tipo]++;
 		args[i++] = getNaturalDouble(" - Metros cuadrados: ");
 		args[i++] = getNatural(" - Número puertas: ");
 		args[i++] = getNatural(" - Número ventanas: ");
