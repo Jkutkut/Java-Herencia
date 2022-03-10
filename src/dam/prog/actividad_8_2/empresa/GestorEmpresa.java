@@ -104,7 +104,7 @@ public class GestorEmpresa {
 		for (int i = 0; i < arr.length; i++) {
 //			TODO
 		}
-		return arr[getIntInRange(q, 1, arr.length) - 1];
+		return arr[getIntInRange(question, 1, arr.length) - 1];
 	}
 	
 	/**
